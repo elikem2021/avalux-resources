@@ -11,16 +11,25 @@
     header { background: #0d0d1a; border-bottom: 1px solid #1e1e3a; padding: 1.25rem 2rem; display: flex; align-items: center; gap: 0.75rem; }
     header a { color: #a78bfa; font-size: 1.25rem; font-weight: 700; text-decoration: none; letter-spacing: -0.02em; }
     header a:hover { color: #c4b5fd; }
-    .hero { max-width: 860px; margin: 5rem auto 3rem; padding: 0 2rem; text-align: center; }
+    nav { background: #0d0d1a; border-bottom: 1px solid #1e1e3a; padding: 0.75rem 2rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    nav a { color: #94a3b8; font-size: 0.9rem; text-decoration: none; }
+    nav a:hover { color: #a78bfa; }
+    .hero { max-width: 860px; margin: 4rem auto 3rem; padding: 0 2rem; text-align: center; }
     .hero h1 { font-size: 2.4rem; font-weight: 800; background: linear-gradient(135deg, #a78bfa, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; }
     .hero p { font-size: 1.1rem; color: #94a3b8; max-width: 600px; margin: 0 auto 2rem; }
     .cta { display: inline-block; background: #a78bfa; color: #0a0a0f; padding: 0.8rem 2rem; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: background 0.2s; }
     .cta:hover { background: #c4b5fd; }
-    .grid { max-width: 860px; margin: 0 auto 5rem; padding: 0 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+    .section { max-width: 860px; margin: 0 auto 3rem; padding: 0 2rem; }
+    .section h2 { font-size: 1.3rem; font-weight: 700; color: #a78bfa; margin-bottom: 1.25rem; border-bottom: 1px solid #1e1e3a; padding-bottom: 0.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
     .card { background: #0d0d1a; border: 1px solid #1e1e3a; border-radius: 12px; padding: 1.5rem; }
-    .card h3 { color: #a78bfa; font-size: 1rem; margin-bottom: 0.5rem; }
-    .card p { font-size: 0.9rem; color: #94a3b8; }
-    footer { text-align: center; padding: 2rem; font-size: 0.85rem; color: #475569; border-top: 1px solid #1e1e3a; }
+    .card h3 { font-size: 1rem; margin-bottom: 0.4rem; }
+    .card h3 a { color: #e2e8f0; text-decoration: none; }
+    .card h3 a:hover { color: #a78bfa; }
+    .card p { font-size: 0.875rem; color: #94a3b8; margin-bottom: 0.75rem; }
+    .card a.link { font-size: 0.85rem; color: #a78bfa; text-decoration: none; }
+    .card a.link:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 2rem; font-size: 0.85rem; color: #475569; border-top: 1px solid #1e1e3a; margin-top: 2rem; }
     footer a { color: #a78bfa; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
   </style>
@@ -29,34 +38,80 @@
   <header>
     <a href="https://avalux.io" rel="dofollow">Avalux Technology Solutions</a>
   </header>
+  <nav>
+    <a href="https://avalux.io/services.html">Services</a>
+    <a href="https://avalux.io/blog.html">Blog</a>
+    <a href="https://avalux.io/about.html">About</a>
+    <a href="https://avalux.io/contact.html">Contact</a>
+    <a href="https://avalux.io/ai-check/">Free AI Check</a>
+  </nav>
 
   <section class="hero">
     <h1>AI Automation Resources</h1>
-    <p>Free templates, guides, and workflow blueprints from the team at Avalux — helping Canadian businesses deploy AI agents and automation that actually work.</p>
+    <p>Free templates, guides, and workflow blueprints from the team at <a href="https://avalux.io" rel="dofollow" style="color:#a78bfa">Avalux Technology Solutions</a> — helping Canadian businesses deploy AI agents and automation that actually work.</p>
     <a class="cta" href="https://avalux.io" rel="dofollow">Visit Avalux.io →</a>
   </section>
 
-  <div class="grid">
-    <div class="card">
-      <h3>AI Agents</h3>
-      <p>Voice and chat agent blueprints for HVAC, healthcare, legal, and real estate verticals.</p>
+  <section class="section">
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3><a href="https://avalux.io/services.html">AI Agents & Automation</a></h3>
+        <p>Voice and chat agents, workflow automation with n8n and Make, custom AI development, and AI strategy consulting.</p>
+        <a class="link" href="https://avalux.io/services.html">View all services →</a>
+      </div>
+      <div class="card">
+        <h3><a href="https://avalux.io/ai-check/">Free AI Readiness Check</a></h3>
+        <p>Find out where AI can save your business time and money — free assessment, no strings attached.</p>
+        <a class="link" href="https://avalux.io/ai-check/">Take the assessment →</a>
+      </div>
+      <div class="card">
+        <h3><a href="https://avalux.io/contact.html">Book a Strategy Call</a></h3>
+        <p>Talk through your automation goals with the Avalux team. No pressure, no cookie-cutter pitch.</p>
+        <a class="link" href="https://avalux.io/contact.html">Get in touch →</a>
+      </div>
     </div>
-    <div class="card">
-      <h3>Workflow Automation</h3>
-      <p>n8n and Make templates for lead routing, CRM sync, and client onboarding pipelines.</p>
+  </section>
+
+  <section class="section">
+    <h2>From the Blog</h2>
+    <div class="grid">
+      <div class="card">
+        <h3><a href="https://avalux.io/blog/n8n-vs-zapier.html">n8n vs. Zapier: The Real Cost Comparison</a></h3>
+        <p>At 100k+ tasks/month, the pricing gap becomes impossible to ignore. Here's the full breakdown.</p>
+        <a class="link" href="https://avalux.io/blog/n8n-vs-zapier.html">Read article →</a>
+      </div>
+      <div class="card">
+        <h3><a href="https://avalux.io/blog/build-vs-buy-custom-ai.html">Build Custom AI vs. Buy Off-the-Shelf</a></h3>
+        <p>When does a custom model actually make sense? A practical decision framework for SMBs.</p>
+        <a class="link" href="https://avalux.io/blog/build-vs-buy-custom-ai.html">Read article →</a>
+      </div>
+      <div class="card">
+        <h3><a href="https://avalux.io/blog/full-stack-ai-agency-model.html">The Full-Stack AI Agency Model Explained</a></h3>
+        <p>What it means to offer end-to-end AI — from strategy through deployment through ongoing optimization.</p>
+        <a class="link" href="https://avalux.io/blog/full-stack-ai-agency-model.html">Read article →</a>
+      </div>
+      <div class="card">
+        <h3><a href="https://avalux.io/blog/workflow-automations-growing-business.html">5 Workflow Automations Every Growing Business Needs</a></h3>
+        <p>The highest-ROI automations to implement first — lead capture, follow-up, reporting, and more.</p>
+        <a class="link" href="https://avalux.io/blog/workflow-automations-growing-business.html">Read article →</a>
+      </div>
     </div>
-    <div class="card">
-      <h3>AEO & GEO</h3>
-      <p>Answer Engine Optimization strategies to get your business cited in ChatGPT and Perplexity.</p>
+  </section>
+
+  <section class="section">
+    <h2>Tools</h2>
+    <div class="grid">
+      <div class="card">
+        <h3><a href="https://avalux.io/tools/zap-to-n8n/">Zapier → n8n Migration Guide</a></h3>
+        <p>Step-by-step guide to migrating your Zapier workflows to n8n — save costs, gain flexibility.</p>
+        <a class="link" href="https://avalux.io/tools/zap-to-n8n/">View guide →</a>
+      </div>
     </div>
-    <div class="card">
-      <h3>Digital Marketing</h3>
-      <p>SEO, social automation, and content systems built for SMBs across Canada.</p>
-    </div>
-  </div>
+  </section>
 
   <footer>
-    <p>© 2026 <a href="https://avalux.io" rel="dofollow">Avalux Technology Solutions</a> · Mississauga, ON · <a href="mailto:hello@avalux.io">hello@avalux.io</a></p>
+    <p>© 2026 <a href="https://avalux.io">Avalux Technology Solutions</a> · Mississauga, ON · <a href="mailto:hello@avalux.io">hello@avalux.io</a></p>
   </footer>
 </body>
 </html>
